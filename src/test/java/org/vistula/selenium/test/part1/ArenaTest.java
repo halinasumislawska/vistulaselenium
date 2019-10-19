@@ -15,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ArenaTest {
 
     private WebDriver driver;
-
     @BeforeClass
     public static void setDriver() {
         WebDriverManager.chromedriver().setup();

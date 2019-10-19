@@ -21,7 +21,7 @@ public class DagDagGoTest {
     }
 
     @Test
-    public void ShouldFindVistula() {
+    public void ShouldFindVistula() { //ten test jest brzydko napisany
         driver = new ChromeDriver();
         driver.manage().window().maximize();//maksymalna rozdzielczość
         driver.get("https://duckduckgo.com/");//szuka podanej strony
@@ -38,7 +38,8 @@ public class DagDagGoTest {
                 (By.cssSelector("a.module__official-url"));//załaduj element o tym selektorze
         Assertions.assertThat(link.getAttribute("href")).isEqualTo("https://www.vistula.edu.pl/"); //assercja sprawdzenia elementu z polecenia wyżej, że prowadzi do tego co trzeba
         driver.quit();
-
     }
+
+
 
 }
